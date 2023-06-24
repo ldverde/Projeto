@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matemática</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link rel="icon" href="img\logo anisio7 1.svg" type="image/x-icon" />
+  <style>
+    body {
+      background-color: rgb(1, 1, 36);
+      margin: 0px;
+    }
+    img {
+      width: 60px;
+    }
+    input {
+      border: 1px solid;
+      border-radius: 30px;
+      width: 120px;
+      text-align: center;
+    }
+    #cabec {
+      position: absolute;
+      width: 100%;
+    }
+
+    .container {
+      position: relative;
+      top: 100px;
+      border-radius: 50px;
+      background-color: rgb(77, 80, 221);
+      height: 800px;
+      padding-left: 50px;
+    }
+
+    div#calculos {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+
+    }
+
+    #media {
+      flex: 0 0 200px;
+    }
+
+    #butao {
+      margin-top: 25px;
+    }
+
+    h2 {
+
+      padding-top: 70px;
+      padding-bottom: 15px;
+      color: white;
+    }
+
+    @media screen and (max-width: 768px) {
+
+      #pt1 {
+        display: grid;
+        justify-items: center;
+        padding-left: 0px;
+      }
+
+      .container {
+        padding-left: 0px;
+      }
+
+      div#calculos {
+        display: flex;
+        flex-direction: column;
+        padding-left: 50px;
+      }
+    }
+  </style>
+  <script src="matem.js"></script>
+
+</head>
+
+<body>
+  <div class="tudo">
+    <div id="cabec">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #050541">
+          <a class="navbar-brand" href="PaginaInicial.html">
+            <picture><img src="img\logo anisio.jpg" alt="anisio" /></picture>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="PaginaInicial.html">Pagina Inicial</a>
+              </li>
+
+              <!-- <li class="nav-item">
+                        <a class="nav-link" href="NotasBimestre.html"
+                        >Notas B. </a
+                        >
+                    </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="Formula.html">Formula</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="Matematica.html">Matematica<span class="sr-only">(Página atual)</span></a>
+              </li>
+              <!-- <li class="nav-item">
+                      <a class="nav-link" href="#">Contanto</a>
+                  </li> -->
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+
+    <div class="container">
+      <div id="pt1">
+        <h2>Calculos/Resultados</h2>
+      </div>
+
+      <div id="calculos">
+        <div id="mediana">
+          <label for="entrada" style="color: white;">Digite Os Numeros:</label>
+          <input type="text" id="entrada" value="" placeholder="Numeros">
+          <br>
+          <button id="butao" onclick="Mediana()">Mediana</button>
+          <br>
+          <br>
+          <p id="ordem" style="color:white;"></p>
+          <br>
+          <p id="selecnum" style="color:white;"></p>
+          <p id="par" style="color:white;"></p>
+          <p id="p" style="color:white;"></p>
+          <p id="para" style="color:white;"></p>
+        </div>
+
+        <div id="media2">
+          <div id="media">
+            <button id="butao2" onclick="Media()">Média</button>
+            <p id="pa" style="color:white;"></p>
+            <br>
+            <p id="pa2" style="color:white;"></p>
+            <p id="para2" style="color:white;"></p>
+            <p id="para3" style="color:white;"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
